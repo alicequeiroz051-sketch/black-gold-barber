@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Black Gold Barber Club | Barbearia premium (site demonstrativo)</title>
+  <meta name="description" content="Black Gold Barber Club: cortes, barba e acabamento com atendimento personalizado. Site demonstrativo criado pela Wevoxe.">
+  <meta name="theme-color" content="#0c0c0d">
+  <meta property="og:title" content="Black Gold Barber Club">
+  <meta property="og:description" content="Seu estilo. Sua assinatura. Site demonstrativo de barbearia premium criado pela Wevoxe.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <!-- CABEÇALHO -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#inicio" class="logo" aria-label="Black Gold Barber Club, início">
+        <span class="logo__mark">BLACK GOLD</span>
+        <span class="logo__sub">Barber Club</span>
+      </a>
+      <nav class="nav" id="nav" aria-label="Principal">
+        <ul class="nav__list">
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#precos">Preços</a></li>
+          <li><a href="#profissionais">Profissionais</a></li>
+          <li><a href="#galeria">Galeria</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+        <a href="#agendar" class="btn btn--gold nav__cta">Agendar horário</a>
+      </nav>
+      <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+      <img class="hero__bg" src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=1800&q=75"
+           alt="Barbeiro finalizando um corte masculino em uma barbearia" width="1800" height="1200" fetchpriority="high">
+      <div class="container hero__content">
+        <p class="hero__kicker">Black Gold Barber Club</p>
+        <h1>Seu estilo.<br>Sua assinatura.</h1>
+        <p class="hero__text">Cortes precisos, barba na navalha e um ambiente pensado para você relaxar enquanto o trabalho é feito com calma e técnica.</p>
+        <div class="hero__actions">
+          <a href="#agendar" class="btn btn--gold">Agendar agora</a>
+          <a href="#servicos" class="btn btn--ghost">Conhecer serviços</a>
+        </div>
+        <ul class="hero__facts">
+          <li><i data-lucide="user-check"></i> Atendimento personalizado</li>
+          <li><i data-lucide="scissors"></i> Profissionais especializados</li>
+          <li><i data-lucide="clock"></i> Hora marcada, sem fila</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- SERVIÇOS -->
+    <section class="section" id="servicos">
+      <div class="container">
+        <header class="section__head">
+          <h2>Serviços</h2>
+          <p>Escolha o serviço e agende em poucos cliques. Valores fictícios de demonstração, fáceis de editar.</p>
+        </header>
+        <!-- PERSONALIZE: edite nome, descrição e preço. O preço do formulário e da tabela é lido daqui. -->
+        <div class="services" id="services">
+          <article class="card" data-service="Corte masculino" data-price="R$ 45,00">
+            <h3>Corte masculino</h3>
+            <p>Corte na tesoura ou máquina, com lavagem e finalização.</p>
+            <p class="card__price">R$ 45,00</p>
+            <button class="btn btn--outline" data-book>Agendar este serviço</button>
+          </article>
+          <article class="card card--popular" data-service="Corte degradê" data-price="R$ 50,00">
+            <span class="badge">Mais pedido</span>
+            <h3>Corte degradê</h3>
+            <p>Transições limpas, do low ao high fade, no acabamento da navalha.</p>
+            <p class="card__price">R$ 50,00</p>
+            <button class="btn btn--outline" data-book>Agendar este serviço</button>
+          </article>
+          <article class="card" data-service="Barba completa" data-price="R$ 35,00">
+            <h3>Barba completa</h3>
+            <p>Modelagem, toalha quente e hidratação com produtos próprios.</p>
+            <p class="card__price">R$ 35,00</p>
+            <button class="btn btn--outline" data-book>Agendar este serviço</button>
+          </article>
+          <article class="card card--popular" data-service="Corte + barba" data-price="R$ 70,00">
+            <span class="badge">Mais pedido</span>
+            <h3>Corte + barba</h3>
+            <p>O pacote clássico: cabelo e barba alinhados na mesma visita.</p>
+            <p class="card__price">R$ 70,00</p>
+            <button class="btn btn--outline" data-book>Agendar este serviço</button>
+          </article>
+          <article class="card" data-service="Acabamento e sobrancelha" data-price="R$ 20,00">
+            <h3>Acabamento e sobrancelha</h3>
+            <p>Contorno na navalha e sobrancelha alinhada para manter o corte em dia.</p>
+            <p class="card__price">R$ 20,00</p>
+            <button class="btn btn--outline" data-book>Agendar este serviço</button>
+          </article>
+          <article class="card" data-service="Pigmentação de barba" data-price="R$ 30,00">
+            <h3>Pigmentação de barba</h3>
+            <p>Preenche falhas e realça o desenho da barba de forma natural.</p>
+            <p class="card__price">R$ 30,00</p>
+            <button class="btn btn--outline" data-book>Agendar este serviço</button>
+          </article>
+          <article class="card" data-service="Platinado" data-price="a partir de R$ 120,00">
+            <h3>Platinado</h3>
+            <p>Descoloração e tonalização. O valor final depende do comprimento e do cabelo.</p>
+            <p class="card__price">a partir de R$ 120,00</p>
+            <button class="btn btn--outline" data-book>Agendar este serviço</button>
+          </article>
+          <article class="card card--popular" data-service="Combo premium" data-price="R$ 85,00">
+            <span class="badge">Mais pedido</span>
+            <h3>Combo premium</h3>
+            <p>Corte, barba e sobrancelha, com o tempo que o serviço merece.</p>
+            <p class="card__price">R$ 85,00</p>
+            <button class="btn btn--outline" data-book>Agendar este serviço</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PREÇOS (gerada por JS a partir dos cards acima) -->
+    <section class="section section--alt" id="precos">
+      <div class="container prices">
+        <header class="section__head">
+          <h2>Tabela de preços</h2>
+          <p>Tudo em um só lugar. Formas de pagamento e valores reais são definidos pela barbearia.</p>
+        </header>
+        <ul class="price-list" id="price-list"></ul>
+      </div>
+    </section>
+
+    <!-- PROFISSIONAIS -->
+    <section class="section" id="profissionais">
+      <div class="container">
+        <header class="section__head">
+          <h2>Quem cuida do seu visual</h2>
+          <p>Perfis fictícios de demonstração. Troque nomes, fotos e textos à vontade.</p>
+        </header>
+        <div class="team">
+          <article class="barber">
+            <img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=700&q=75" alt="Retrato do barbeiro Rafael Monteiro" width="700" height="880" loading="lazy">
+            <h3>Rafael Monteiro</h3>
+            <p class="barber__role">Degradê e cortes clássicos</p>
+            <p>Doze anos de tesoura e máquina. Gosta de corte limpo que dura semanas.</p>
+          </article>
+          <article class="barber">
+            <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=700&q=75" alt="Retrato do barbeiro Diego Alcântara" width="700" height="880" loading="lazy">
+            <h3>Diego Alcântara</h3>
+            <p class="barber__role">Barba e navalha</p>
+            <p>Especialista em desenho de barba, toalha quente e acabamento na navalha.</p>
+          </article>
+          <article class="barber">
+            <img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=700&q=75" alt="Retrato do barbeiro Thiago Vasconcelos" width="700" height="880" loading="lazy">
+            <h3>Thiago Vasconcelos</h3>
+            <p class="barber__role">Platinado e coloração</p>
+            <p>Cuida de descoloração, tonalização e pigmentação com foco na saúde do fio.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- AGENDAMENTO -->
+    <section class="section section--alt" id="agendar">
+      <div class="container booking">
+        <header class="section__head">
+          <h2>Agende seu horário</h2>
+          <p>Preencha os dados, escolha o horário e envie o pedido pelo WhatsApp da barbearia.</p>
+        </header>
+
+        <div class="demo-note" role="note">
+          <i data-lucide="info"></i>
+          <p><strong>Demonstração:</strong> nenhuma reserva real é feita. Os horários ocupados são simulados e guardados apenas neste navegador (localStorage), sem sincronizar com outros aparelhos.</p>
+        </div>
+
+        <form class="form" id="booking-form" novalidate>
+          <div class="field">
+            <label for="name">Nome</label>
+            <input type="text" id="name" name="name" autocomplete="name" required>
+            <p class="field__error" id="name-error" role="alert"></p>
+          </div>
+          <div class="field">
+            <label for="phone">Telefone / WhatsApp</label>
+            <input type="tel" id="phone" name="phone" autocomplete="tel" inputmode="numeric" placeholder="(00) 00000-0000" required>
+            <p class="field__error" id="phone-error" role="alert"></p>
+          </div>
+          <div class="field">
+            <label for="service">Serviço</label>
+            <select id="service" name="service" required></select>
+            <p class="field__error" id="service-error" role="alert"></p>
+          </div>
+          <div class="field">
+            <label for="barber">Profissional</label>
+            <select id="barber" name="barber">
+              <option value="Qualquer profissional">Qualquer profissional</option>
+              <option value="Rafael Monteiro">Rafael Monteiro</option>
+              <option value="Diego Alcântara">Diego Alcântara</option>
+              <option value="Thiago Vasconcelos">Thiago Vasconcelos</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="date">Data</label>
+            <input type="date" id="date" name="date" required>
+            <p class="field__error" id="date-error" role="alert"></p>
+          </div>
+          <fieldset class="field field--full slots">
+            <legend>Horário</legend>
+            <div class="slots__grid" id="slots" role="radiogroup" aria-label="Horários disponíveis">
+              <p class="slots__hint">Escolha uma data para ver os horários.</p>
+            </div>
+            <p class="field__error" id="time-error" role="alert"></p>
+          </fieldset>
+          <div class="field field--full">
+            <label for="notes">Observações <span class="optional">(opcional)</span></label>
+            <textarea id="notes" name="notes" rows="3" maxlength="300" placeholder="Ex.: quero manter o comprimento em cima."></textarea>
+          </div>
+          <div class="form__actions field--full">
+            <button type="submit" class="btn btn--gold">Confirmar agendamento</button>
+            <button type="button" class="btn btn--text" id="clear-demo">Limpar horários de demonstração</button>
+          </div>
+        </form>
+
+        <div class="summary" id="summary" hidden tabindex="-1">
+          <h3>Pedido pronto para enviar</h3>
+          <p class="summary__note">Falta só o último passo: envie o resumo pelo WhatsApp para a barbearia combinar o horário com você.</p>
+          <dl class="summary__list" id="summary-list"></dl>
+          <div class="form__actions">
+            <a class="btn btn--gold" id="whatsapp-send" href="#agendar" target="_blank" rel="noopener">Enviar pelo WhatsApp</a>
+            <button type="button" class="btn btn--outline" id="new-booking">Fazer outro agendamento</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALERIA -->
+    <section class="section" id="galeria">
+      <div class="container">
+        <header class="section__head">
+          <h2>Galeria</h2>
+          <p>Cortes, barbas, degradês e o ambiente do clube.</p>
+        </header>
+        <div class="gallery">
+          <figure class="gallery__item gallery__item--tall"><img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&w=800&q=75" alt="Corte degradê finalizado na navalha" width="800" height="1000" loading="lazy"><figcaption>Degradê</figcaption></figure>
+          <figure class="gallery__item"><img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?auto=format&fit=crop&w=800&q=75" alt="Barba modelada com toalha quente" width="800" height="600" loading="lazy"><figcaption>Barba</figcaption></figure>
+          <figure class="gallery__item"><img src="https://images.unsplash.com/photo-1512690459411-b9245aed614b?auto=format&fit=crop&w=800&q=75" alt="Interior da barbearia com cadeiras de couro" width="800" height="600" loading="lazy"><figcaption>Ambiente</figcaption></figure>
+          <figure class="gallery__item"><img src="https://images.unsplash.com/photo-1532710093739-9470acff878f?auto=format&fit=crop&w=800&q=75" alt="Barbeiro aparando o cabelo com tesoura e pente" width="800" height="600" loading="lazy"><figcaption>Tesoura</figcaption></figure>
+          <figure class="gallery__item gallery__item--tall"><img src="https://images.unsplash.com/photo-1520338661084-680395057c93?auto=format&fit=crop&w=800&q=75" alt="Cliente com corte clássico recém-finalizado" width="800" height="1000" loading="lazy"><figcaption>Corte clássico</figcaption></figure>
+          <figure class="gallery__item"><img src="https://images.unsplash.com/photo-1493256338651-d82f7acb2b38?auto=format&fit=crop&w=800&q=75" alt="Ferramentas de barbeiro organizadas na bancada" width="800" height="600" loading="lazy"><figcaption>Ferramentas</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section class="section section--alt" id="sobre">
+      <div class="container about">
+        <div class="about__text">
+          <h2>Um clube feito para quem leva o visual a sério</h2>
+          <p>A Black Gold nasceu da vontade de juntar a tradição das barbearias antigas com o rigor técnico de hoje. História fictícia de demonstração: três amigos, uma cadeira de couro herdada e a ideia de que um corte bem feito muda o dia de quem senta nela.</p>
+          <p>Aqui o horário é seu. Sem pressa, sem fila e com conversa só se você quiser.</p>
+        </div>
+        <ul class="values">
+          <li><i data-lucide="gem"></i><h3>Qualidade</h3><p>Produtos selecionados e ferramentas sempre afiadas.</p></li>
+          <li><i data-lucide="ruler"></i><h3>Precisão</h3><p>Linhas limpas e simetria em cada detalhe.</p></li>
+          <li><i data-lucide="sparkles"></i><h3>Estilo</h3><p>Referências clássicas e urbanas, adaptadas ao seu rosto.</p></li>
+          <li><i data-lucide="handshake"></i><h3>Atendimento</h3><p>Cada cliente é ouvido antes da primeira passada.</p></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- DEPOIMENTOS -->
+    <section class="section" id="depoimentos">
+      <div class="container">
+        <header class="section__head">
+          <h2>O que os clientes dizem</h2>
+          <p><strong>Depoimentos fictícios, criados apenas para demonstração.</strong> Em um site real, use avaliações autorizadas pelos clientes.</p>
+        </header>
+        <!-- DEMO: depoimentos inventados. Substitua por avaliações reais autorizadas. -->
+        <div class="testimonials">
+          <blockquote><p>Saí de lá com o melhor degradê que já fiz. Pontual e muito caprichoso.</p><footer>Cliente fictício A</footer></blockquote>
+          <blockquote><p>A barba na toalha quente é outro nível. Ambiente tranquilo e atendimento atencioso.</p><footer>Cliente fictício B</footer></blockquote>
+          <blockquote><p>Agendei pelo site e foi tudo simples. Voltei no mês seguinte com um amigo.</p><footer>Cliente fictício C</footer></blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section class="section section--alt" id="contato">
+      <div class="container contact">
+        <div>
+          <h2>Contato</h2>
+          <ul class="contact__list">
+            <li><i data-lucide="map-pin"></i><span>Rua Exemplo, 000, Centro, Cidade Fictícia (endereço demonstrativo)</span></li>
+            <li><i data-lucide="clock"></i><span>Terça a sábado, 9h às 20h<br>Domingo e segunda: fechado</span></li>
+            <li><i data-lucide="phone"></i><span data-config="phone">(00) 00000-0000</span></li>
+          </ul>
+          <div class="contact__actions">
+            <a class="btn btn--gold" data-whatsapp target="_blank" rel="noopener">Chamar no WhatsApp</a>
+            <a class="btn btn--outline" data-social="instagram" target="_blank" rel="noopener">Instagram</a>
+            <a class="btn btn--outline" data-social="facebook" target="_blank" rel="noopener">Facebook</a>
+          </div>
+        </div>
+        <!-- MAPA: cole aqui o iframe do Google Maps quando houver um endereço real. -->
+        <div class="map" role="img" aria-label="Espaço reservado para o mapa">
+          <i data-lucide="map"></i>
+          <p>Espaço do mapa<br><small>Integre o Google Maps com o endereço real da barbearia.</small></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- RODAPÉ -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <p class="logo__mark">BLACK GOLD</p>
+        <p class="logo__sub">Barber Club</p>
+        <p class="footer__small">Seu estilo. Sua assinatura.</p>
+      </div>
+      <nav aria-label="Links rápidos">
+        <h3>Links rápidos</h3>
+        <ul><li><a href="#inicio">Início</a></li><li><a href="#servicos">Serviços</a></li><li><a href="#galeria">Galeria</a></li><li><a href="#agendar">Agendar</a></li></ul>
+      </nav>
+      <div>
+        <h3>Serviços</h3>
+        <ul><li><a href="#servicos">Corte degradê</a></li><li><a href="#servicos">Barba completa</a></li><li><a href="#servicos">Combo premium</a></li></ul>
+      </div>
+      <div>
+        <h3>Contato</h3>
+        <ul><li data-config="phone">(00) 00000-0000</li><li><a data-social="instagram" target="_blank" rel="noopener">Instagram</a></li><li><a data-social="facebook" target="_blank" rel="noopener">Facebook</a></li></ul>
+      </div>
+    </div>
+    <p class="footer__demo">Site demonstrativo criado pela Wevoxe. Marca, endereço, profissionais e depoimentos são fictícios.</p>
+  </footer>
+
+  <a class="wa-float" data-whatsapp target="_blank" rel="noopener" aria-label="Falar no WhatsApp"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg></a>
+
+  <script src="https://unpkg.com/lucide@0.469.0/dist/umd/lucide.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
